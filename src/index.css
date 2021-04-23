@@ -164,27 +164,6 @@ li {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .container {
   padding: 20px;
   max-width: 600px;
@@ -195,6 +174,7 @@ li {
   box-shadow: 0 0 2px rgb(207, 203, 203);
   height: 350px;
   text-align: center;
+  display: table;
 }
 
 .text {
@@ -206,4 +186,82 @@ li {
 .input {
   width: 60%;
   height: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.user-card {
+  display: flex;
+  max-width: 400px;
+  margin: auto;
+  border: solid rgb(212, 205, 205) 1px;
+  border-radius: 4px;
+  margin-top: 30px;
+  padding: 10px;
+  box-shadow: 0 0 2px rgb(207, 203, 203);
+  height: 120px;
+}
+.user-img {
+  height: 100%;
+  width: 25%;
+}
+
+.user-img img {
+  height: auto;
+  width: 80%;
+  margin: auto;
+  margin-top: 15px;
+  border-radius: 50px;
+}
+
+.user-info {
+  height: 100%;
+  width: 55%;
+  margin: 0;
+  padding: 0;
+  border-left: solid rgb(212, 205, 205) 1px;
+  border-right: solid rgb(212, 205, 205) 1px;
+}
+.user-info hr {
+  width: 80%;
+  opacity: 0.3;  
+}
+.user-info h3, .user-info p{
+  margin: 12px 0px;
+}
+
+.user-score {
+  padding: 0px;
+  margin: 0px;
+  margin-left: 10px;
+  border: 1px solid #9a9a9a;
+  width: 25%;
+}
+.user-score p{
+  font-weight: bold;
+  padding: 10px;
+  margin: 0px;
+  margin-bottom: 0px;
+  background-color: #ccc;
+}
+.user-score .user-total-points{
+  font-size: 22px;
+  font-weight: bold;
+  background-color: #00b5d6;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  margin: 15px auto;
 }
