@@ -10,12 +10,6 @@ a {
   color: #252525;
 }
 
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 10px;
-}
-
 .btn {
   text-transform: uppercase;
   margin: 35px auto;
@@ -26,6 +20,12 @@ a {
   font-size: 16px;
   width: 250px;
   position: relative;
+  font-weight: bold;
+  color: #00b5a0;
+}
+.btn:disabled {
+  cursor: not-allowed;
+  color: #ddd;
 }
 
 .btn:hover {
@@ -160,4 +160,50 @@ li {
   margin-top: 10px;
   font-size: 20px;
   color: #C3392A;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+  border: solid rgb(212, 205, 205) 1px;
+  border-radius: 4px;
+  margin-top: 40px;
+  box-shadow: 0 0 2px rgb(207, 203, 203);
+  height: 350px;
+  text-align: center;
+}
+
+.text {
+  color: #00b5a0;
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+.input {
+  width: 60%;
+  height: 40px;
 }
