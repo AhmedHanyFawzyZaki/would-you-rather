@@ -33,20 +33,12 @@ class Home extends Component {
 
                     <TabPanel>
                         {unansweredQuestions.map(quest => (
-                            <Question key={quest.id} questionID={quest.id}
-                                isAnswered={
-                                    quest.optionOne.votes.includes(authedUser) || quest.optionTwo.votes.includes(authedUser)
-                                }
-                            />
+                            <Question key={quest.id} questionID={quest.id} />
                         ))}
                     </TabPanel>
                     <TabPanel>
                         {answeredQuestions.map(quest => (
-                            <Question key={quest.id} questionID={quest.id}
-                                isAnswered={
-                                    quest.optionOne.votes.includes(authedUser) || quest.optionTwo.votes.includes(authedUser)
-                                }
-                            />
+                            <Question key={quest.id} questionID={quest.id} />
                         ))}
                     </TabPanel>
                 </Tabs>

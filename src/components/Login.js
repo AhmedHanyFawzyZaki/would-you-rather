@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { setAuthedUser } from '../actions/authedUser';
+import { withRouter } from 'react-router';
 
 class Login extends Component {
     state = {
@@ -18,6 +19,8 @@ class Login extends Component {
         const { value } = this.state;
 
         this.props.dispatch(setAuthedUser(value));
+
+        this.props.history.push("/home"); //redirect to home after login
     };
 
     render() {
@@ -58,4 +61,4 @@ const mapStateToProps = ({ users }) => ({
     users,
 });
 
-export default connect(mapStateToProps)(Login);
+export default withRouter(connect(mapStateToProps)(Login));

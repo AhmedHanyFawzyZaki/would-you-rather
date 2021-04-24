@@ -47,15 +47,36 @@ a {
   font-weight: bold;
 }
 
+.nav{
+  background: #ccc ;
+  color: #fff;
+  display: table;
+  width: 100%;
+}
 .nav ul {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   text-decoration: none;
+  float: left;
 }
-
-.nav li:first-child {
-  padding-left: 0;
+.nav div{
+  float: right;
+  padding: 15px;
+}
+.nav-img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  margin: 0px 25px -20px 11px;
+}
+.logout-btn{
+    padding: 10px;
+    border: 1px solid rgba(0,0,0,.29);
+    cursor: pointer;
+    background: #fff;
+    font-weight: bold;
+    color: #00b5a0;
 }
 
 ul {
@@ -325,9 +346,12 @@ li {
 .tab {
   float: left;
   width: 200px;
+  cursor: pointer;
+  border-bottom: 1px solid #ccc;
 }
 .react-tabs__tab-list{
   display: table;
+  border: 0px;
 }
 
 .react-tabs__tab--selected{
@@ -346,3 +370,4 @@ li {
   font-weight: bold;
   color: #00b5a0;
 }
+
