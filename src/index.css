@@ -374,3 +374,57 @@ li {
 .text-red{
   color: red;
 }
+
+.table-div{
+  display: table;
+}
+.report-details{
+  height: 425px;
+}
+.custom-style-report{
+  padding: 0px 10px;
+  width: 65%;
+}
+.reportOption{
+  padding: 5px;
+  border: 1px solid moccasin;
+  margin-bottom: 20px;
+  background: moccasin;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 20px;
+}
+.my-answer {
+  border: 1px solid rgba(167, 16, 16, 0.274);
+}
+
+.progress-bar {
+  background-color: #aaa;
+  border-radius: 13px;
+  padding: 3px;
+}
+
+.inner-bar {
+  background-color: orange;
+  width: 0%;
+  height: 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 20px;
+}
+.report-user-img{
+  height: 425px;
+}
+.report-user-img img{
+  width: 100%;
+}
+.my-vote{
+  position: relative;
+    bottom: 155px;
+    left: 110px;
+    background: lightsalmon;
+    border-radius: 10px;
+    padding: 5px;
+}
