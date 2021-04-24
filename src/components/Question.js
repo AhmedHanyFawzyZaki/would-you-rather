@@ -22,8 +22,8 @@ function Question(props) {
                     <p className="">
                         <span>...{question.optionOne.text}...</span>
                     </p>
-                    <button type="button" className="">
-                        View Question
+                    <button type="button" className="poll">
+                        View Poll
                     </button>
                 </div>
             </div>
