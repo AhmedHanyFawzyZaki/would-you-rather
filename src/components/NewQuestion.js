@@ -45,6 +45,7 @@ class NewQuestion extends Component {
                 <form onSubmit={this.handleSubmit}>
                     <div className="">
                         <input
+                            className="input"
                             type="text-area"
                             name="optionOne"
                             placeholder="Enter Option One Text Here"
@@ -59,6 +60,7 @@ class NewQuestion extends Component {
                     <span>or..</span>
                     <div className="">
                         <input
+                            className="input"
                             type="text-area"
                             name="optionTwo"
                             placeholder="Enter Option Two Text Here"

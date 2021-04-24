@@ -187,7 +187,7 @@ li {
 
 .container {
   padding: 20px;
-  max-width: 600px;
+  width: 450px;
   margin: auto;
   border: solid rgb(212, 205, 205) 1px;
   border-radius: 4px;

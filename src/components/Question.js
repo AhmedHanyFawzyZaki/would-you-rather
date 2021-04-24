@@ -1,5 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
+
 
 
 function Question(props) {
@@ -22,9 +24,9 @@ function Question(props) {
                     <p className="">
                         <span>...{question.optionOne.text}...</span>
                     </p>
-                    <button type="button" className="poll">
+                    <Link to={`/questions/${question.id}`} type="button" className="poll">
                         View Poll
-                    </button>
+                    </Link>
                 </div>
             </div>
         </div>

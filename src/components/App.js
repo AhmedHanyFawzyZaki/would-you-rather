@@ -11,6 +11,7 @@ import Leaderboard from './Leaderboard'
 import Home from './Home'
 import Nav from './Nav'
 import NewQuestion from './NewQuestion';
+import QuestionDetails from './QuestionDetails';
 
 
 class App extends Component {
@@ -29,6 +30,7 @@ class App extends Component {
           <Redirect exact from="/" to="/home" />
           <ProtectedRoute path="/leaderboard" component={Leaderboard} />
           <ProtectedRoute path="/new" component={NewQuestion} />
+          <ProtectedRoute path="/questions/:id" component={QuestionDetails} />
           <ProtectedRoute path="*" component={NotFound} />
           <Route component={NotFound} />
         </Switch>
