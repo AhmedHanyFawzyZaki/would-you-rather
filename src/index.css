@@ -351,7 +351,7 @@ li {
 }
 .react-tabs__tab-list{
   display: table;
-  border: 0px;
+  border: 0px !important;
 }
 
 .react-tabs__tab--selected{
@@ -371,3 +371,6 @@ li {
   color: #00b5a0;
 }
 
+.text-red{
+  color: red;
+}

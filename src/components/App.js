@@ -10,6 +10,7 @@ import Login from './Login'
 import Leaderboard from './Leaderboard'
 import Home from './Home'
 import Nav from './Nav'
+import NewQuestion from './NewQuestion';
 
 
 class App extends Component {
@@ -27,6 +28,7 @@ class App extends Component {
           <ProtectedRoute path="/home" component={Home} />
           <Redirect exact from="/" to="/home" />
           <ProtectedRoute path="/leaderboard" component={Leaderboard} />
+          <ProtectedRoute path="/new" component={NewQuestion} />
           <ProtectedRoute path="*" component={NotFound} />
           <Route component={NotFound} />
         </Switch>

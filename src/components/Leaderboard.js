@@ -17,7 +17,7 @@ function Leaderboard(props) {
 
     return (
         <div className="container">
-            {!formatedUsers.length ? null : formatedUsers.map(name => <UserCard key={name.id} name={name} />)}
+            {!formatedUsers.length ? null : formatedUsers.map(user => <UserCard key={user.id} user={user} />)}
         </div>
     );
 };
