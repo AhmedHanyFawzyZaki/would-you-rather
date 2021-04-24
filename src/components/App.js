@@ -4,6 +4,7 @@ import { handleInitialData } from '../actions/shared'
 import LoadingBar from 'react-redux-loading'
 import Login from './Login'
 import Leaderboard from './Leaderboard'
+import Home from './Home'
 
 
 class App extends Component {
@@ -17,7 +18,7 @@ class App extends Component {
         <LoadingBar />
         {this.props.loading === true
           ? null
-          : this.props.authedUser === null ? <Login /> : <Leaderboard />
+          : this.props.authedUser === null ? <Login /> : <Home />
         }
       </Fragment>
     )
@@ -25,9 +26,10 @@ class App extends Component {
 }
 
 
-function mapStateToProps({ loadingBar }) {
+function mapStateToProps({ loadingBar, authedUser }) {
   return {
     loading: loadingBar.default === 1,
+    authedUser
   }
 }
 

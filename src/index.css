@@ -200,7 +200,6 @@ li {
 
 
 
-
 .user-card {
   display: flex;
   max-width: 400px;
@@ -264,4 +263,74 @@ li {
   height: 50px;
   line-height: 50px;
   margin: 15px auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.question-card {
+  max-width: 400px;
+  margin: auto;
+  border: solid rgb(212, 205, 205) 1px;
+  border-radius: 4px;
+  margin-top: 30px;
+  padding: 10px;
+  box-shadow: 0 0 2px rgb(207, 203, 203);
+  height: 180px;
+}
+.card-details .user-img{
+  float: left;
+  border-right: 1px solid #a0a0a0;
+  margin-top: 10px;
+  padding-right: 15px;
+}
+.question-details{
+  float: left;
+  width: 70%;
+}
+
+.card-header {
+  margin: auto;
+  font-style: oblique;
+  color: #00b5d6;
+  width: 380px;
+  margin: 0px;
+  display: table;
+  background: #ccc;
+  padding: 10px;
+}
+.card-header h3{
+  margin: 0px;
+}
+.card-details{
+  height: 120px;
+}
+
+.selected {
+  color:#00b5d6;
+  height: 100%;
+  width: 50%;
+  border: none;
+}
+
+.tab {
+  float: left;
+  width: 200px;
+}
+.react-tabs__tab-list{
+  display: table;
+}
+
+.react-tabs__tab--selected{
+  border: 1px solid #000;
+  border-bottom: 0px;
 }
