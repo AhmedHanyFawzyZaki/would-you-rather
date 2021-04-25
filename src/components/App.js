@@ -29,7 +29,7 @@ class App extends Component {
           <ProtectedRoute path="/home" component={Home} />
           <Redirect exact from="/" to="/home" />
           <ProtectedRoute path="/leaderboard" component={Leaderboard} />
-          <ProtectedRoute path="/new" component={NewQuestion} />
+          <ProtectedRoute path="/add" component={NewQuestion} />
           <ProtectedRoute path="/questions/:id" component={QuestionDetails} />
           <ProtectedRoute path="*" component={NotFound} />
           <Route component={NotFound} />
