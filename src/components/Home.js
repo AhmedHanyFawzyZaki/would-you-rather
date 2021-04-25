@@ -21,7 +21,6 @@ class Home extends Component {
             )
             .map(quest => questions[quest])
             .sort((a, b) => b.timestamp - a.timestamp);
-
         return (
             <div className="container">
                 <h2 className="container-header">Questions</h2>
@@ -32,12 +31,12 @@ class Home extends Component {
                     </TabList>
 
                     <TabPanel>
-                        {unansweredQuestions.map(quest => (
+                        {unansweredQuestions.length === 0 ? <p>No Questions to answer, Please add yours!</p> : unansweredQuestions.map(quest => (
                             <Question key={quest.id} questionID={quest.id} />
                         ))}
                     </TabPanel>
                     <TabPanel>
-                        {answeredQuestions.map(quest => (
+                        {answeredQuestions.length === 0 ? <p>No Answered Questions, Please try to answer one!</p> : answeredQuestions.map(quest => (
                             <Question key={quest.id} questionID={quest.id} />
                         ))}
                     </TabPanel>
