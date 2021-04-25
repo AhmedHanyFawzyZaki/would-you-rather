@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import NotFound from './NotFound';
+import QuestionForm from './QuestionForm';
 import QuestionReport from './QuestionReport';
 
 function QuestionDetails(props) {
@@ -14,7 +15,7 @@ function QuestionDetails(props) {
 
     return (
         <div>
-            {isAnswered ? <QuestionReport question={question} /> : "question form"}
+            {isAnswered ? <QuestionReport question={question} /> : <QuestionForm question={question} />}
         </div>
     )
 }
