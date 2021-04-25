@@ -16,7 +16,7 @@ function UserCard(props) {
                 </p>
                 <hr />
                 <p>
-                    <span>Created questions: </span>
+                    <span>Asked questions: </span>
                     <span>{user.asked}</span>
                 </p>
             </div>
