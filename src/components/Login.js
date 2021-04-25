@@ -20,7 +20,11 @@ class Login extends Component {
 
         this.props.dispatch(setAuthedUser(value));
 
-        this.props.history.push("/home"); //redirect to home after login
+        const from =
+            this.props.location !== undefined && this.props.location.state !== undefined
+                ? this.props.location.state.from
+                : '/home';
+        this.props.history.push(`${from}`); //redirect to home after login
     };
 
     render() {
